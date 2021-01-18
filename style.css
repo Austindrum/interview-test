@@ -1,0 +1,359 @@
+:root {
+/* Font/text values */
+--unnamed-font-family-heiti-tc: Heiti TC;
+--unnamed-font-family-source-sans-pro: Source Sans Pro;
+--unnamed-font-family-pingfang-tc: PingFang TC;
+--unnamed-font-family-helvetica: Helvetica;
+--unnamed-font-family-verdana: Verdana;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-300: 300px;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-14: 14px;
+--unnamed-font-size-18: 18px;
+--unnamed-font-size-27: 27px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-character-spacing-0-36: 0.36px;
+--unnamed-line-spacing-17: 17px;
+--unnamed-line-spacing-23: 23px;
+--unnamed-line-spacing-30: 30px;
+--unnamed-line-spacing-33: 33px;
+--unnamed-line-spacing-34: 34px;
+}
+    
+/* Character Styles */
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-heiti-tc);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-23);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-505050);
+}
+.unnamed-character-style-2 {
+font-family: var(--unnamed-font-family-heiti-tc);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-300);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-17);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-505050);
+}
+.unnamed-character-style-3 {
+font-family: var(--unnamed-font-family-source-sans-pro);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-27);
+line-height: var(--unnamed-line-spacing-34);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-505050);
+}
+.unnamed-character-style-4 {
+font-family: var(--unnamed-font-family-pingfang-tc);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0-36);
+color: var(--unnamed-color-505050);
+}
+.unnamed-character-style-5 {
+font-family: var(--unnamed-font-family-pingfang-tc);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0-36);
+color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-6 {
+font-family: var(--unnamed-font-family-helvetica);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-30);
+letter-spacing: var(--unnamed-character-spacing-0-36);
+color: var(--unnamed-color-000000);
+}
+.unnamed-character-style-7 {
+font-family: var(--unnamed-font-family-verdana);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-27);
+line-height: var(--unnamed-line-spacing-33);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-9a9a9a);
+}
+
+/* Custom css */
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #EDFBFF;
+}
+body {
+    padding-top: 80px;
+}
+@media (max-width: 767px) {
+    body {
+        padding-top: 55px;
+    }
+}
+/*=======================================
+Image Change with media size change
+=========================================*/
+@media (max-width: 767px) {
+    .web-client {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .mobile-client {
+        display: none;
+    }
+}
+/*=======================================
+Navbar
+=========================================*/
+.navbar {
+    box-shadow: 0px 2px 6px #0000000A;
+    background-color: #fff;
+}
+.navbar .top-line{
+    -webkit-background: linear-gradient(to right, #00829b, #009583);
+    background: linear-gradient(to right, #00829b, #009583);
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+}
+.navbar .navbar-brand {
+    width: 204px;
+    height: 44px;
+    margin: 10px 0;
+}
+.navbar .navbar-brand#home{
+    width: 100px;
+    position: relative;
+}
+.navbar .navbar-brand#home #home-img{
+    width: 35px;
+}
+.navbar .navbar-brand#home p {
+    position: absolute;
+    top: 13px;
+    right: -2px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 16px/19px var(--unnamed-font-family-heiti-tc);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 16px/19px Heiti TC;
+    color: #505050;
+}
+@media (max-width: 767px) {
+    .navbar {
+        box-shadow: 0px 2px 6px #0000005D;
+    }
+    .navbar .navbar-brand#logo {
+        width: 100%;
+        height: 27px;
+        margin: 5px 0 10px 0;
+        text-align: center;
+    }
+    .navbar .navbar-brand#logo img{
+        width: 127px;
+    }
+    .navbar .navbar-brand#home{
+        position: absolute;
+        right: 9%;
+        top: 4.5px;
+        width: 25px;
+    }
+    .navbar .navbar-brand#home #home-img{
+        width: 25px;
+    }
+    .container {
+        padding: 0;
+    }
+}
+/*=======================================
+Main Stept
+=========================================*/
+.main {
+    padding: 15px;
+    margin-top: 5px;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #0000000A;
+}
+.main .main-header {
+    border-left: 8px solid #00829b;
+    padding-left: 8px;
+    font-size: 27px;
+    color: #00829b;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-27)/var(--unnamed-line-spacing-34) var(--unnamed-font-family-source-sans-pro);
+    letter-spacing: var(--unnamed-character-spacing-0);
+}
+@media (max-width: 767px) {
+    .main .main-header {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+.main .step {
+    border-bottom: 1px dotted #505050;
+    padding: 20px 0;
+}
+.main .arrow-right {
+    width:0;
+    height:0;
+    border-width:0 9px 15px ;
+    border-style:solid;
+    border-color:transparent transparent #F55A08;
+    transform: translateX(-3px) translateY(5px) rotate(90deg); 
+}
+.main .step:last-child{
+    border-bottom: none;
+}
+.main .step img {
+    width: 100%;
+}
+.main .step .content {
+    padding-left: 8px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main .step .content {
+        transform: translateX(40px) translateY(-15px);
+        padding-right: 10px;
+    }
+}
+.main .step .content img {
+    width: 22px;
+}
+.main .step .content p:nth-child(1) {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/25px var(--unnamed-font-family-pingfang-tc);
+    letter-spacing: var(--unnamed-character-spacing-0-36);
+    text-align: left;
+    font: normal normal normal 18px/25px PingFang TC;
+    letter-spacing: 0.36px;
+    color: #F55A08;
+    margin-bottom: 5px;
+}
+.main .step .content p:nth-child(2) {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/25px var(--unnamed-font-family-pingfang-tc);
+    letter-spacing: var(--unnamed-character-spacing-0-36);
+    text-align: left;
+    font: normal normal normal 18px/25px PingFang TC;
+    letter-spacing: 0.36px;
+    color: #505050;
+}
+.main .step .content p:nth-child(3) {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/25px var(--unnamed-font-family-pingfang-tc);
+    letter-spacing: var(--unnamed-character-spacing-0-36);
+    text-align: left;
+    font: normal normal normal 18px/25px PingFang TC;
+    letter-spacing: 0.36px;
+    color: #505050;
+}
+#step-6 .content .row {
+    position: relative;
+    transform: translateX(-22px);
+}
+@media (max-width: 767px) {
+    .step .row .row div:nth-child(1) {
+        position: absolute;
+    }
+    .step .row .row div:nth-child(2) {
+        margin-left: 19px;
+    }
+    .main .arrow-right {
+        border-width:0 5px 8px ;
+        transform: translateX(-1px) translateY(8px) rotate(90deg); 
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #step-6 .content .row {
+        transform: translateX(-18px);
+    }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+    #step-6 .content .row {
+        transform: translateX(-10px);
+    }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+    #step-6 .content .row {
+        transform: translateX(-27px);
+    }
+    #step-6 .content .row .header {
+        position: absolute;
+    }
+    #step-6 .content .row .descript {
+        transform: translateX(45px);
+    }
+}
+#step-6 .content .row div{
+    padding: 0;
+}
+#step-6 .content .row .header {
+    width: 37px;
+    margin-right: 5px;
+}
+#step-6 .content .row .header span {
+    display: inline-block;
+    width: 37px;
+    height: 19px;
+    background: #F55A08 0% 0% no-repeat padding-box;
+    color: #fff;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .main .step .content p:nth-child(1){
+        font-size: 17px;
+    }
+    .main .step .content p.mobile-client{
+        font-size: 17px;
+        padding-right: 10px;
+    }
+    .main .step .content  p:nth-child(2){
+        font-size: 17px;
+        padding-right: 10px;
+    }
+    #step-6 .content .row {
+        margin-left: 0;
+    }
+    #step-6 .content .row .descript {
+        margin-left: 40px;
+    }
+}
+footer {
+    height: 87px;
+    margin-top: 20px;
+    padding-top: 20px;
+    -webkit-background: linear-gradient(90deg, #00829B 0%, #009583 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #00829B 0%, #009583 100%) 0% 0% no-repeat padding-box;
+}
+footer p {
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 20px/25px var(--unnamed-font-family-heiti-tc);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal medium 20px/25px Heiti TC;
+    letter-spacing: 0px;
+    color: #FFFFFD;
+}
+#back-to-top {
+    width: 59px;
+    height: 59px;
+    background: #00829B50 0% 0% no-repeat padding-box;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 0px 17px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: none;
+    color: #fff;
+}
